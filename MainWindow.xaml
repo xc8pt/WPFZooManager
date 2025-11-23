@@ -5,8 +5,116 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFZooManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="580">
     <Grid>
+        <Label Content="Zoo List"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="10,10,0,0"/>
+        <ListBox x:Name="listZoos"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Width="155" Height="175"
+                 Margin="10,41,0,0" SelectionChanged="listZoos_SelectionChanged"/>
+        
+        <!-- Список животных, связанных с зоопарком -->
+        <Label Content="Associated Animals"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="202,10,0,0"/>
+        <ListBox x:Name="listAssociatedAnimals"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Width="155" Height="175"
+                 Margin="200,41,0,0"/>
+        
+        <!-- Список всех животных -->
+        <Label Content="All Animals" HorizontalAlignment="Left" 
+               Margin="399,10,0,0" VerticalAlignment="Top" Width="111"/>
+        <ListBox x:Name="listAllAnimals"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Width="155" Height="300"
+                 Margin="396,41,0,0"/>
+
+        <!-- Улучшение кода -->
+        
+        <!-- Кнопки удаления -->
+        <Grid>
+            <Button Content="Delete Zoo"
+                Background="LightCoral"
+                Foreground="Black"
+                Click="DeleteZoo_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="10,235,0,0"/>
+            <Button Content="Remove Animal"
+                Background="LightCoral" 
+                Foreground="Black"
+                Click="RemoveAnimal_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="202,235,0,0"/>
+            <Button Content="Delete Animal"
+                Background="LightCoral"
+                Foreground="Black"
+                Click="DeleteAnimal_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="396,390,0,0"/>
+        </Grid>
+        <!-- Кнопки добавления -->
+        <Grid>
+            <Button Content="Add Zoo"
+                Background="LightGreen" Foreground="Black"
+                Click="AddZoo_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="10,318,0,0"/>
+            <Button Content="Add Animal Zoo"
+                Background="LightGreen" Foreground="Black"
+                Click="AddAnimal_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="202,318,0,0"/>
+            <Button Content="Add Animal to Zoo"
+                Background="LightGreen" Foreground="Black"
+                Click="AddAnimalToZoo_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="396,351,0,0"/>
+        </Grid>
+        <!-- Кнопки обновления -->
+        <Grid>
+            <Button Content="Update Zoo"
+                Background="LightBlue" Foreground="Black"
+                Click="UpdateZoo_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="10,357,0,0"/>
+            <Button Content="Update Animal"
+                    Background="LightBlue" Foreground="Black"
+                    Click="UpdateAnimal_Click"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="158" Height="34"
+                    Margin="202,357,0,0"/>
+        </Grid>
+        <!-- Все животные -->
+        <TextBox x:Name="myTextBox"
+                Text="..."
+                TextWrapping="Wrap"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Height="39" Width="350"
+                Margin="10,274,0,0"/>
         
     </Grid>
 </Window>
