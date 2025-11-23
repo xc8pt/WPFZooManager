@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFZooManager", "WPFZooManager.csproj", "{5F450ED1-1D92-4B36-84CB-7283F8EDDBBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F450ED1-1D92-4B36-84CB-7283F8EDDBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F450ED1-1D92-4B36-84CB-7283F8EDDBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F450ED1-1D92-4B36-84CB-7283F8EDDBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F450ED1-1D92-4B36-84CB-7283F8EDDBBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A68349E-BAEE-4F65-A935-3474C5941494}
+	EndGlobalSection
+EndGlobal
